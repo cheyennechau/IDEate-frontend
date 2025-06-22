@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* App.css */
+
+.custom-heading {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.section-padding {
+  padding: 2rem;
+}
