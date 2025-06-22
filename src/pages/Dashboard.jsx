@@ -9,9 +9,8 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Progress } from "@/components/ui/progress"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ReviewDetails } from "@/components/ReviewDetails"
-import Header from "@/components/Header"
 
-export default function Dashboard() {
+const Dashboard = () => {
   const [selectedReview, setSelectedReview] = useState("1")
 
   return (
@@ -178,3 +177,5 @@ export default function Dashboard() {
     </div>
   )
 }
+
+export default Dashboard;
