@@ -1,5 +1,28 @@
 @import "tailwindcss";
 
+@layer utilities {
+  .bg-background {
+    background-color: hsl(var(--background));
+  }
+
+  .text-foreground {
+    color: hsl(var(--foreground));
+  }
+
+  .bg-muted {
+    background-color: hsl(var(--muted));
+  }
+
+  .text-muted-foreground {
+    color: hsl(var(--muted-foreground));
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
 @layer base {
   :root {
     /* Light theme variables */
@@ -90,8 +113,3 @@
   }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}

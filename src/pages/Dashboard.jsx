@@ -1,14 +1,13 @@
-import { useState } from "react"
-import { Filter, Plus } from "lucide-react"
-import { Link } from "react-router-dom"
-
-import { Avatar, AvatarFallback } from "@/components/ui/avatar"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Progress } from "@/components/ui/progress"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { ReviewDetails } from "@/components/ReviewDetails"
+import { useState } from "react";
+import { Filter, Plus } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Progress } from "@/components/ui/progress";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { ReviewDetails } from "@/components/ReviewDetails";
 
 const Dashboard = () => {
   const [selectedReview, setSelectedReview] = useState("1")
@@ -22,8 +21,8 @@ const Dashboard = () => {
             <h1 className="text-2xl font-bold">Code Review Dashboard</h1>
             <p className="text-muted-foreground">Manage and track your code reviews</p>
           </div>
-          <Link href="/">
-            <Button className="gap-1.5">
+          <Link to="/review" >
+            <Button className="gap-1.5 hover:underline underline-offset-4 cursor-pointer">
               <Plus className="h-4 w-4" />
               New Review
             </Button>
@@ -175,7 +174,7 @@ const Dashboard = () => {
         </div>
       </main>
     </div>
-  )
-}
+  );
+};
 
 export default Dashboard;

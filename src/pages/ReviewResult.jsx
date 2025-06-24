@@ -1,30 +1,27 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 import {
-  Check,
-  Code,
-  Download,
-  ExternalLink,
-  MessageSquare,
-  ThumbsDown,
-  ThumbsUp,
-} from "lucide-react"
-
-import { Avatar, AvatarFallback } from "@/components/ui/avatar"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import {
-  Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card"
-import { Progress } from "@/components/ui/progress"
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Textarea } from "@/components/ui/textarea"
+} from "@/components/ui/card"; // Card, CardFooter
+// import {
+//   Check,
+//   Code,
+//   Download,
+//   ExternalLink,
+//   MessageSquare,
+//   ThumbsDown,
+//   ThumbsUp,
+// } from "lucide-react";
+// import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+// import { Badge } from "@/components/ui/badge";
+// import { Button } from "@/components/ui/button";
+// import { Progress } from "@/components/ui/progress";
+// import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+// import { Textarea } from "@/components/ui/textarea";
 
-function formatReviewText(text, type = "general") {
+const formatReviewText = (text, type = "general") => {
   const lines = text.split(/\n\s*/).filter(item => item.trim() !== "");
 
   if (type === "summary") {
@@ -108,9 +105,9 @@ function formatReviewText(text, type = "general") {
       )}
     </div>
   );
-}
+};
 
-export function ReviewDetails({ reviewId }) {
+const ReviewDetails = ({ reviewId }) => {
   const [activeTab, setActiveTab] = useState("discussion")
   const [comment, setComment] = useState("")
   const [review, setReview] = useState(null)
@@ -182,5 +179,7 @@ export function ReviewDetails({ reviewId }) {
         </div>
       </CardContent>
     </>
-  )
-}
+  );
+};
+
+export default ReviewDetails;
