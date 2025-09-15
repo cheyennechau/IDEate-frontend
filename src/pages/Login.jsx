@@ -1,14 +1,14 @@
-import { useState } from "react"
-import { useNavigate } from "react-router-dom"
-import { Eye, EyeOff, Github } from "lucide-react"
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { Eye, EyeOff, Github } from "lucide-react";
 
-import { Button } from "../components/ui/Button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/Card"
-import { Input } from "../components/ui/Input"
-import { Label } from "../components/ui/Label"
-import { Separator } from "../components/ui/Separator"
+import { Button } from "../components/ui/Button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/Card";
+import { Input } from "../components/ui/Input";
+import { Label } from "../components/ui/Label";
+import { Separator } from "../components/ui/Separator";
 
-export default function Login() {
+const Login = () => {
   const [showPassword, setShowPassword] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
   const navigate = useNavigate()
@@ -142,5 +142,7 @@ export default function Login() {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
+
+export default Login;

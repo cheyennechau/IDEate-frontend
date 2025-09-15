@@ -1,25 +1,5 @@
 import { useState, useEffect } from "react";
-import {
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"; // Card, CardFooter
-// import {
-//   Check,
-//   Code,
-//   Download,
-//   ExternalLink,
-//   MessageSquare,
-//   ThumbsDown,
-//   ThumbsUp,
-// } from "lucide-react";
-// import { Avatar, AvatarFallback } from "@/components/ui/avatar";
-// import { Badge } from "@/components/ui/badge";
-// import { Button } from "@/components/ui/button";
-// import { Progress } from "@/components/ui/progress";
-// import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-// import { Textarea } from "@/components/ui/textarea";
+import { CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const formatReviewText = (text, type = "general") => {
   const lines = text.split(/\n\s*/).filter(item => item.trim() !== "");

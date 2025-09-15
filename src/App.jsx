@@ -5,14 +5,12 @@ import Login from "@/pages/Login";
 import Dashboard from "@/pages/Dashboard";
 import Review from "@/pages/Review";
 import Header from "@/components/Header";
-// import { ThemeProvider } from "@/components/ThemeProvider";
 
 import "@/App.css"
 import "@/index.css"
 
 const App = () => {
   return (
-    // <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
       <Router>
         {(location.pathname == "/dashboard" || location.pathname == "/review") && <Header />}
         <Routes>
@@ -22,7 +20,7 @@ const App = () => {
           <Route path="/review" element={<Review />} />
         </Routes>
       </Router>
-  )
-}
+  );
+};
 
 export default App;
