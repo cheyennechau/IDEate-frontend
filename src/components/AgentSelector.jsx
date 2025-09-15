@@ -1,12 +1,12 @@
-import { useState } from "react"
-import { Check, Shield, Zap } from "lucide-react"
+import { useState } from "react";
+import { Check, Shield, Zap } from "lucide-react";
 
-import { Badge } from "@/components/ui/badge"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Label } from "@/components/ui/label"
-import { Switch } from "@/components/ui/switch"
+import { Badge } from "@/components/ui/badge";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Label } from "@/components/ui/label";
+import { Switch } from "@/components/ui/switch";
 
-export function AgentSelector() {
+const AgentSelector = () => {
   const [selectedAgents, setSelectedAgents] = useState({
     security: true,
     performance: true,
@@ -183,5 +183,7 @@ export function AgentSelector() {
         </Card>
       </div>
     </div>
-  )
-}
+  );
+};
+
+export default AgentSelector;

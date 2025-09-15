@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/RadioGroup";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Textarea } from "@/components/ui/textarea";
-import { AgentSelector } from "@/components/AgentSelector";
+import AgentSelector from "@/components/AgentSelector";
 
 const Review = () => {
   const [isSubmitting, setIsSubmitting] = useState(false)
